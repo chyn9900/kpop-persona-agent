@@ -65,6 +65,18 @@
 - 공개 데이터(AI Hub, PersonaChat, LoCoMo, LongMemEval)는 라이선스 조건을 따르며 원본을 저장소에 커밋하지 않는다.
 - API 키·모델 가중치·원본 데이터는 `.gitignore`로 제외하고 `.env.example`만 커밋한다.
 
+## 환경 설정
+
+macOS에서 개발하고, 로컬 모델 실험은 Windows WSL2 GPU 환경에서 한다.
+
+```bash
+conda create -n kpop python=3.11
+conda activate kpop
+pip install -e ".[dev]"        # 로컬 모델: ".[dev,local]", 평가: ".[dev,eval]"
+cp .env.example .env           # API 키 입력
+pytest -q
+```
+
 ## 저장소 구조
 
 ```

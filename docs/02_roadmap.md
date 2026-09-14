@@ -25,7 +25,7 @@
 - [ ] LongMemEval 데이터 포맷 확인 (질문 유형 5종: single-session / multi-session / knowledge-update / temporal-reasoning / abstention)
 - [x] `persona/artist_card.yaml` 초안: HOLTEN(연습생 보이그룹, 펑키 힙합), 화자 재율, 페르소나 문장 13개·말투 규칙 6개·금지 6개
 - [ ] 페르소나 카드에 "실존 인물과 겹치지 않음" 자체 점검 항목 기록
-- [ ] 로컬 개발환경: macOS에 Python 3.11 venv + `pip install -e .` 확인
+- [x] 로컬 개발환경: conda env `kpop`(Python 3.11.16) + `pip install -e ".[dev]"` + pytest 통과 (2026-09-14)
 - [ ] WSL2 GPU 환경: `nvidia-smi`, PyTorch CUDA 인식 확인
 - [ ] 부트캠프 9주차 NLP 모듈 수강 시작 (docs/03 참조)
 
