@@ -95,6 +95,7 @@ docs/         리서치 보고서, 주제 후보, 로드맵, 학습 계획
 - [02 10주 로드맵](docs/02_roadmap.md)
 - [03 학습 계획](docs/03_study_plan.md)
 - [04 AI Hub 데이터셋 구조 노트](docs/04_data_notes.md)
+- [05 벤치마크 포맷 노트와 평가셋 스키마](docs/05_benchmark_notes.md)
 
 ## 라이선스
 

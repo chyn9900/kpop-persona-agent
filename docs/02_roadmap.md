@@ -21,8 +21,8 @@
 - [x] 저장소 구조 생성, README·CLAUDE.md·docs 정리
 - [x] GitHub 퍼블릭 리포 생성 및 첫 push
 - [x] AI Hub 계정 생성 → 페르소나 대화 / 멀티세션 대화 2종 신청·승인·다운로드 완료 (docs/04 참조)
-- [ ] LoCoMo 데이터 포맷 확인 (세션 구조, QA 카테고리 5종 메모)
-- [ ] LongMemEval 데이터 포맷 확인 (질문 유형 5종: single-session / multi-session / knowledge-update / temporal-reasoning / abstention)
+- [x] LoCoMo 데이터 포맷 확인 (docs/05 참조)
+- [x] LongMemEval 데이터 포맷 확인 (oracle 500문항, 질문 유형 6종 + abstention, docs/05 참조)
 - [x] `persona/artist_card.yaml` 초안: HOLTEN(연습생 보이그룹, 펑키 힙합), 화자 재율, 페르소나 문장 13개·말투 규칙 6개·금지 6개
 - [ ] 페르소나 카드에 "실존 인물과 겹치지 않음" 자체 점검 항목 기록
 - [x] 로컬 개발환경: conda env `kpop`(Python 3.11.16) + `pip install -e ".[dev]"` + pytest 통과 (2026-09-14)

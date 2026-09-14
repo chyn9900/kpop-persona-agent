@@ -68,11 +68,12 @@ kpop-persona-agent/
 │   ├─ 01_topic_selection.md           # 연구 주제 8개 비교 + A+E 선택 근거 (공개용 요약)
 │   ├─ 02_roadmap.md                   # 10주 로드맵 체크리스트
 │   ├─ 03_study_plan.md                # 부트캠프 모듈 학습 순서
-│   └─ 04_data_notes.md                # AI Hub 데이터셋 구조 노트
+│   ├─ 04_data_notes.md                # AI Hub 데이터셋 구조 노트
+│   └─ 05_benchmark_notes.md           # LoCoMo·LongMemEval 포맷 노트 + 자체 평가셋 스키마
 ├─ private/                   # 개인 메모·원본 리서치 (gitignore, 커밋 금지)
 ├─ persona/
 │   └─ artist_card.yaml       # 가상 아티스트 페르소나 카드
-├─ data/raw/aihub/            # AI Hub 원본 zip (gitignore, 커밋 금지)
+├─ data/raw/                  # AI Hub 원본 zip, 벤치마크 파일 (gitignore, 커밋 금지)
 ├─ src/
 │   ├─ memory/                # short_term.py, episodic.py, factual.py, policy_rule.py, policy_llm.py
 │   ├─ agent/                 # LangGraph 대화 그래프
