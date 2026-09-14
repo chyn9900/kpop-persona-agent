@@ -24,9 +24,9 @@
 - [x] LoCoMo 데이터 포맷 확인 (docs/05 참조)
 - [x] LongMemEval 데이터 포맷 확인 (oracle 500문항, 질문 유형 6종 + abstention, docs/05 참조)
 - [x] `persona/artist_card.yaml` 초안: HOLTEN(연습생 보이그룹, 펑키 힙합), 화자 재율, 페르소나 문장 13개·말투 규칙 6개·금지 6개
-- [ ] 페르소나 카드에 "실존 인물과 겹치지 않음" 자체 점검 항목 기록
+- [x] 페르소나 카드 실존 충돌 점검 (2026-09-14 웹 검색, 멤버명 4개 교체)
 - [x] 로컬 개발환경: conda env `kpop`(Python 3.11.16) + `pip install -e ".[dev]"` + pytest 통과 (2026-09-14)
-- [ ] WSL2 GPU 환경: `nvidia-smi`, PyTorch CUDA 인식 확인
+- [ ] WSL2 GPU 환경: `nvidia-smi`, PyTorch CUDA 인식 확인 (Windows PC에서 직접. macOS M1 8GB는 MPS 동작 확인, 로컬 7~8B 모델은 불가하므로 API 경로만 사용)
 - [ ] 부트캠프 9주차 NLP 모듈 수강 시작 (docs/03 참조)
 
 **회고:**
