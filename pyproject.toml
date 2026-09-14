@@ -1,0 +1,65 @@
+# pyproject.toml 초안 — 의존성 버전은 2주차 파이프라인 구현 시점에 실제 설치본으로 고정한다.
+# 왜 미고정인가: LangGraph·Chroma는 릴리스 주기가 빨라 지금 버전을 박으면 2주 뒤 호환 문제가 생기기 쉽다.
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kpop-persona-agent"
+version = "0.1.0"
+description = "장기기억 메모리 아키텍처 기반 K-pop 아티스트 페르소나 챗봇 + 한국어 페르소나 평가 벤치마크"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Chanyeon Byun", email = "chyn8800@gmail.com" }]
+keywords = ["llm", "persona", "chatbot", "long-term-memory", "rag", "evaluation", "korean"]
+
+dependencies = [
+    # 대화 컨트롤러·LLM 연동
+    "langgraph",
+    "langchain-core",
+    "anthropic",
+    # 벡터DB·임베딩
+    "chromadb",
+    "sentence-transformers",
+    # 설정·유틸
+    "pyyaml",
+    "python-dotenv",
+    "pydantic>=2",
+]
+
+[project.optional-dependencies]
+# 로컬 오픈소스 모델 실험 (WSL2 GPU)
+local = [
+    "torch",
+    "transformers",
+    "accelerate",
+]
+# 평가 하네스
+eval = [
+    "ragas",
+    "datasets",
+    "scipy",
+    "pandas",
+]
+# 개발 도구
+dev = [
+    "pytest",
+    "ruff",
+    "jupyter",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*", "eval*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

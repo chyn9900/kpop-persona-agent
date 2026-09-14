@@ -1,0 +1,64 @@
+# 환경 변수·비밀 키
+.env
+.env.*
+!.env.example
+
+# 데이터 원본 (AI Hub 등 재배포 금지 데이터)
+data/
+data/raw/
+eval/datasets/raw/
+eval/datasets/synthetic_draft/
+
+# 모델 가중치
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.gguf
+models/
+checkpoints/
+
+# 벡터DB·로컬 DB
+chroma/
+chroma_db/
+*.sqlite
+*.sqlite3
+*.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.python-version
+
+# 테스트·린트 캐시
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# 실험 로그·결과
+runs/
+outputs/
+logs/
+wandb/
+mlruns/
+
+# 에디터·OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 개인 메모·비공개 문서 (연구실 리서치, 지원 목표 등)
+private/
+CLAUDE.local.md
